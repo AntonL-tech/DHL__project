@@ -4,6 +4,19 @@
   padding: 2rem 0;
   background-color: $yellow;
 
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: $yellow;
+    padding: .8rem 0;
+
+    @media ($med) {
+      padding: .5rem 0;
+    }
+  }
+
   @media ($med) {
     padding: 1.5rem 0;
   }

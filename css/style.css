@@ -108,6 +108,19 @@ h1, h2, h3, h4, h5, h6, ul {
   padding: 2rem 0;
   background-color: #FFCC00;
 }
+.header.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #FFCC00;
+  padding: 0.8rem 0;
+}
+@media (max-width:771px) {
+  .header.fixed {
+    padding: 0.5rem 0;
+  }
+}
 @media (max-width:771px) {
   .header {
     padding: 1.5rem 0;
@@ -970,6 +983,7 @@ h1, h2, h3, h4, h5, h6, ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .footer .footer__inner .footer__content .footer__col {
   margin-right: 2rem;
