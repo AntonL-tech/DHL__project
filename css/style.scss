@@ -1,0 +1,75 @@
+@import "vars";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: $black;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Blocks*/
+
+
+/* Container */
+@import "blocks/container";
+
+/* Header-menu */
+@import "blocks/header-menu";
+
+/* Header */
+@import "blocks/header";
+
+/* nav */
+@import "blocks/nav";
+
+/* burger */
+@import "blocks/burger";
+
+/* Intro */
+@import "blocks/intro";
+
+/* BTNS */
+@import "blocks/btns";
+
+/* services */
+@import "blocks/services";
+
+/* about */
+@import "blocks/about";
+
+/* express */
+@import "blocks/express";
+
+/* accordion */
+@import "blocks/accordion";
+
+/* features */
+@import "blocks/features";
+
+/* client */
+@import "blocks/client";
+
+/* footer */
+@import "blocks/footer";
+
+
+
+
+
+

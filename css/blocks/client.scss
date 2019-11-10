@@ -1,0 +1,65 @@
+@import "../vars";
+.client {
+  width: 100%;
+  height: auto;
+
+  padding: 4.67rem 0;
+  @media ($giant) {
+    padding: 3.67rem 0;
+  }
+  @media ($big) {
+    padding: 2.67rem 0;
+  }
+  @media ($med) {
+    padding: 1.67rem 0;
+  }
+
+
+  .client__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+
+    @media ($giant) {
+      justify-content: center;
+    }
+
+    .client__col {
+      width: 25%;
+      padding: 0 1rem;
+
+      @media ($giant) {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+      }
+      @media ($sm) {
+        width: 100%;
+      }
+
+      .client__item {
+        margin-bottom: 2rem;
+        border: solid 1px transparent;
+        max-height: 129px;
+        max-width: 270px;
+        overflow: hidden;
+        padding: 3rem 0;
+        background-color: #F9F9F9;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: border-color .2s linear;
+
+        &:hover {
+          border-color: $red;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "../vars";
+.burger {
+  display: none;
+  
+  @media ($big) {
+    display: block;
+  }
+}
+

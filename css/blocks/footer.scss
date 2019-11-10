@@ -1,0 +1,108 @@
+@import "../vars";
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg,$red,$yellow);
+  padding: 0 2.66rem;
+
+
+  .footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1920px;
+    min-height: 311px;
+    background: url($DirFooter + "1.jpg") left no-repeat, url($DirFooter + "2.jpg") right no-repeat, $white;
+    @media ($giant) {
+      background: $white;
+    }
+
+    .footer__content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .footer__col{
+        margin-right: 2rem;
+
+        @media ($med) {
+          margin-right: 0;
+          width: 50%;
+        }
+
+        @media ($sm) {
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        .footer__item {
+
+          @media ($med) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          @media ($sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+          .footer__caption {
+            font-size: 1.33rem;
+            color: $red;
+            text-transform: uppercase;
+
+            margin-bottom: 1.86rem;
+
+          }
+          .footer__text {
+            display: flex;
+            flex-direction: column;
+
+            font-size: .93rem;
+
+            .footer__link {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: $gray;
+
+              margin-bottom: .5rem;
+
+              transition: text-decoration .2s linear, color .2s linear;
+
+              position: relative;
+              padding-left: 1.5rem;
+
+              &:before {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 8px 0 8px 10px;
+                border-color: transparent transparent transparent $red;
+                line-height: 0;
+
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+
+              }
+              &:hover {
+                text-decoration: underline;
+                color: $yellow;
+              }
+              &--social:hover{
+                color: #017EDF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

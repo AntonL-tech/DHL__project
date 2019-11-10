@@ -1,0 +1,90 @@
+@import "../vars";
+
+.header-menu {
+  width: 100%;
+  background-color: $red;
+
+  padding: 1rem 0;
+
+  .header-menu__inner {
+    display: flex;
+    justify-content: space-between;
+
+    color: $white;
+    font-size: .93rem;
+
+    .header-menu__left {
+
+
+      .header-menu__lang {
+        position: relative;
+        cursor: pointer;
+        padding-right: 1.4rem;
+
+        &:after {
+          content: "";
+          width: 8px;
+          height: 8px;
+
+          border-top: solid 1.5px $white;
+          border-right: solid 1.5px $white;
+
+          position: absolute;
+          top: 45%;
+          right: 0;
+          z-index: 1;
+
+          transform: translateY(-50%) rotate(135deg);
+        }
+      }
+    }
+
+    .header-menu__right {
+      display: flex;
+
+      .header-menu__cont {
+        display: flex;
+        cursor: pointer;
+
+
+        .menu__image {
+          margin-right: 1rem;
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: $white;
+          }
+        }
+        .menu__text {
+          margin-right: 2rem;
+
+          @media ($sm) {
+            display: none;
+          }
+        }
+      }
+      .header-menu__country {
+        position: relative;
+        padding-right: 1.4rem;
+        cursor: pointer;
+
+
+        &:after {
+          content: "";
+          width: 8px;
+          height: 8px;
+
+          border-top: solid 1.5px $white;
+          border-right: solid 1.5px $white;
+
+          position: absolute;
+          top: 36%;
+          right: 0;
+          z-index: 1;
+
+          transform: translateY(-50%) rotate(135deg);
+        }
+      }
+    }
+  }
+}

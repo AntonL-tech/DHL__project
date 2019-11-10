@@ -1,0 +1,226 @@
+@import "../vars";
+.services {
+  padding: 6rem 0;
+  overflow: hidden;
+
+  @media ($med) {
+    padding: 3rem 0;
+  }
+  @media ($sm) {
+    padding: 1rem 0;
+  }
+  .services__header {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .services__title {
+      font-size: 10rem;
+      color: rgba($gray, .2);
+      text-transform: uppercase;
+
+      @media ($med) {
+        font-size: 6rem;
+        text-align: center;
+      }
+      @media ($sm) {
+        font-size: 4rem;
+        text-align: center;
+      }
+
+    }
+
+    .services__subtitle {
+      font-size: 3.33rem;
+      color: $red;
+
+      position: absolute;
+      top: 50%;
+      left: 1%;
+      z-index: 1;
+
+      transform: translate3d(0,-50%,0);
+
+      @media ($med) {
+        font-size: 1.33rem;
+        left: 50%;
+        transform: translate3d(-100%,-50%,0);
+      }
+      @media ($sm) {
+        font-size: .8rem;
+        left: 50%;
+        transform: translate3d(-100%,-50%,0);
+      }
+    }
+  }
+  .services__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -1.5rem;
+
+
+    .services__col {
+      width: 25%;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media ($giant) {
+        width: 50%;
+      }
+      @media ($sm) {
+        width: 100%;
+      }
+      .services__item {
+        max-width: 270px;
+        margin-bottom: 2rem;
+        @media ($sm) {
+          margin-bottom: 1rem;
+        }
+
+        .services__photo {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+
+        .services__caption {
+          font-size: 1.33rem;
+
+          text-transform: uppercase;
+
+          margin: 1.6rem 0 .53rem;
+
+          a {
+            text-decoration: none;
+            color: $red;
+
+            transition: text-decoration .2s linear;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+
+        }
+
+        .services__text {
+          font-size: 1.06rem;
+          color: $gray;
+          line-height: 1.6;
+          margin-bottom: .53rem;
+        }
+
+        .services__link {
+          text-decoration: none;
+          font-size: 1.06rem;
+          color: $black;
+
+          transition: text-decoration .2s linear;
+
+          position: relative;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 0 6px 8px;
+            border-color: transparent transparent transparent $red;
+            line-height: 0;
+
+            position: absolute;
+            top: 50%;
+            right: -1.3rem;
+            transform: translateY(-50%);
+          }
+        }
+
+        .services__form {
+          padding: 2rem;
+          background-color: $red;
+
+          .services__form--title {
+            font-size: 1.33rem;
+            color: $white;
+            position: relative;
+
+            margin-bottom: 3.33rem;
+
+            &:after {
+              content: "";
+              height: 2px;
+              width: 70px;
+
+              background-color: $yellow;
+              position: absolute;
+              bottom: -1.46rem;
+              left: 0;
+            }
+          }
+
+          .services__form--text {
+            font-size: 1.06rem;
+            color: $white;
+            line-height: 1.625;
+
+            margin-bottom: 1rem;
+          }
+
+          .services__select {
+            margin-bottom: 2.3rem;
+            position: relative;
+            background-color: $yellow;
+
+
+            &:after {
+              content: "";
+              width: 10px;
+              height: 10px;
+
+              border-top: solid 1px $yellow;
+              border-right: solid 1px $yellow;
+
+              position: absolute;
+              top: 50%;
+              right: 1.4rem;
+              z-index: 1;
+
+              transform: translateY(-50%) rotate(135deg);
+              pointer-events: none;
+            }
+
+            select {
+              width: 100%;
+
+              background: #9D0000;
+              border: 0;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+
+              font-size: 1.03rem;
+              font-family: inherit;
+              color: $white;
+
+              padding: 1rem 4.53rem 1rem 1.5rem;
+              outline: none;
+              cursor: pointer;
+
+              &:focus {
+                outline: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../vars";
+.header {
+
+  padding: 2rem 0;
+  background-color: $yellow;
+
+  @media ($med) {
+    padding: 1.5rem 0;
+  }
+  @media ($sm) {
+    padding: 1rem 0;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 50px;
+      width: 50px;
+      border: solid 1px $red;
+      border-radius: 50%;
+      background-color: $red;
+
+      box-shadow: 0 0 4px $red;
+
+      transition: box-shadow .2s linear;
+
+      @media ($big) {
+        display: none;
+      }
+
+
+        svg {
+          width: 13px;
+          height: 14px;
+          fill: $white;
+        }
+      &:hover {
+        box-shadow: 0 0 15px $red;
+
+      }
+    }
+  }
+}
+

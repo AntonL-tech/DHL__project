@@ -1,0 +1,46 @@
+@import "../vars";
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  @media ($big) {
+    display: none;
+  }
+
+  .nav__link {
+    position: relative;
+    margin-right: 2.33rem;
+
+    font-size: .93rem;
+    color: $red;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: $red;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      transition: width .2s linear;
+
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+

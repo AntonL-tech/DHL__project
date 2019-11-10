@@ -1,0 +1,94 @@
+@import "../vars";
+.express {
+  width: 100%;
+
+  padding: 20.5rem 0 6.66rem;
+
+  @media ($giant) {
+    padding: 0 0 6.66rem;
+  }
+
+
+  .express__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4.33rem;
+    @media ($giant) {
+      margin: 0 auto;
+    }
+
+    .express__col {
+      width: 50%;
+      padding: 0 4.33rem;
+      margin-bottom: 2rem;
+
+      @media ($giant) {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+      }
+      @media ($sm) {
+        display: none;
+      }
+
+      .express__form {
+        background-color: $red;
+        min-height: 533px;
+        height: auto;
+
+        .express__title {
+          display: flex;
+
+          .express__title__item {
+            width: 50%;
+            text-align: center;
+            padding: 1rem 6.33rem;
+
+            background-color: $yellow;
+
+            font-size: .93rem;
+            color: $red;
+
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &--active {
+              background-color: $red;
+              color: $white;
+            }
+          }
+        }
+      }
+      .express__image {
+        border: solid 20px $yellow;
+        border-radius: 10px;
+        width: 433px;
+        height: 499px;
+
+        position: relative;
+
+        .express__photo {
+          position: absolute;
+          top: 2rem;
+          left: 2rem;
+          z-index: 1;
+
+          @media ($giant) {
+            top: 1rem;
+            left: 1rem;
+          }
+        }
+
+
+        .express__logo {
+          position: absolute;
+          top: 32rem;
+          left: 2rem;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}

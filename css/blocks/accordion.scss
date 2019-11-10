@@ -1,0 +1,118 @@
+@import "../vars";
+.accordion {
+  padding: 2.66rem;
+
+
+  .accordion__item {
+    margin-bottom: 1.33rem;
+
+
+    .accordion__header {
+      padding: 1rem 1.4rem;
+      border: solid 2px $white;
+
+      position: relative;
+
+      cursor: pointer;
+
+      &:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+
+        border-top: solid 1px $white;
+        border-right: solid 1px $white;
+
+        position: absolute;
+        top: 50%;
+        right: 1.4rem;
+        z-index: 1;
+
+        transform: translateY(-50%) rotate(135deg);
+      }
+
+      &:before {
+        content: "";
+        width: 2px;
+        height: 50px;
+
+        background-color: $white;
+        position: absolute;
+        top: 0;
+        right: 50px;
+        z-index: 1;
+      }
+
+      .accordion__title {
+        font-size: .93rem;
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+    .accordion__content {
+      display: none;
+      border: solid 2px $white;
+      border-top: none;
+      padding: 1rem 1.4rem;
+
+      .accordion__text {
+        font-size: 1.06rem;
+        color: $white;
+
+        margin-bottom: .93rem;
+      }
+      .accordion__link {
+        display: block;
+        font-size: 1.06rem;
+        text-decoration: none;
+        color: $white;
+
+        transition: text_decoration .2s linear, color .2s linear;
+        position: relative;
+
+        padding-left: 1.5rem;
+
+        &:hover {
+          text-decoration: underline;
+          color: $yellow;
+        }
+        &:before {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 8px 0 8px 10px;
+          border-color: transparent transparent transparent $yellow;
+          line-height: 0;
+
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    /*MODIFICATORS*/
+
+    &--active .accordion__content {
+      display: block;
+    }
+    &--active .accordion__header {
+      background-color: $yellow;
+
+      .accordion__title{
+        color: $red;
+
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+      &:before {
+        background-color: $red;
+      }
+    }
+  }
+}

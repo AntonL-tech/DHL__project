@@ -1,0 +1,39 @@
+@import "../vars";
+
+.btns {
+  font-size: .8rem;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: solid 2px $white;
+  border-radius: 25px;
+
+  margin-right: 1.33rem;
+  padding: 1rem 2.8rem;
+
+  box-shadow: 0 0 4px $red;
+
+  transition: color .2s linear, background-color .2s linear, border-color .2s linear,
+    box-shadow .2s linear;
+
+  @media ($sm) {
+    font-size: .5rem;
+    padding: .8rem 2.2rem;
+  }
+  &:hover {
+    color: $red;
+    background-color: $yellow;
+    border-color: $yellow;
+    box-shadow: 0 0 10px $yellow;
+
+  }
+
+  /*MODificators*/
+
+  &--features {
+    background-color:#A00000;
+    border-color: transparent;
+    margin-right: 0;
+  }
+}
