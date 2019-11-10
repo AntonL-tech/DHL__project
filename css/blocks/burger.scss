@@ -1,9 +1,44 @@
 @import "../vars";
 .burger {
   display: none;
-  
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 0;
+  outline: none;
+
   @media ($big) {
     display: block;
+  }
+  .burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+
+    background-color: $red;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      background-color: $red;
+
+      position: absolute;
+      left: 0;
+      z-index: 1;
+    }
+    &:before {
+      top:-8px;
+    }
+    &:after {
+      bottom:-8px;
+    }
   }
 }
 
