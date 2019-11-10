@@ -1,5 +1,6 @@
 $(function() {
 
+    /*Fixes Header*/
     let menu = $("#header-menu");
     let header = $("#header");
     let intro = $("#intro");
@@ -21,4 +22,17 @@ $(function() {
             header.removeClass("fixed");
         }
     });
+
+
+    /*navToggle*/
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
+
+    navToggle.on("click", function (event) {
+        event.preventDefault();
+
+        nav.toggleClass("show");
+
+    });
+
 });

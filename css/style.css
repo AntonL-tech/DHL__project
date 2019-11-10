@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6, ul {
 .header {
   padding: 2rem 0;
   background-color: #FFCC00;
+  position: relative;
 }
 .header.fixed {
   position: fixed;
@@ -165,12 +166,23 @@ h1, h2, h3, h4, h5, h6, ul {
 /* nav */
 .nav {
   display: flex;
-  align-items: center;
   height: 100%;
+}
+.nav.show {
+  display: flex;
 }
 @media (max-width:991px) {
   .nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    flex-direction: column;
+    text-align: right;
+    background-color: #FFCC00;
+    width: 100%;
+    height: auto;
   }
 }
 .nav .nav__link {
@@ -180,6 +192,13 @@ h1, h2, h3, h4, h5, h6, ul {
   color: #BA0000;
   text-transform: uppercase;
   text-decoration: none;
+  transition: text-decoration 0.2s linear;
+}
+@media (max-width:991px) {
+  .nav .nav__link {
+    margin-right: 0;
+    padding: 0.5rem 1rem;
+  }
 }
 .nav .nav__link:last-child {
   margin-right: 0;
@@ -194,8 +213,18 @@ h1, h2, h3, h4, h5, h6, ul {
   left: 0;
   transition: width 0.2s linear;
 }
+@media (max-width:991px) {
+  .nav .nav__link:after {
+    display: none;
+  }
+}
 .nav .nav__link:hover:after {
   width: 100%;
+}
+@media (max-width:991px) {
+  .nav .nav__link:hover {
+    text-decoration: underline;
+  }
 }
 
 /* burger */
@@ -970,7 +999,6 @@ h1, h2, h3, h4, h5, h6, ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1920px;
   min-height: 311px;
   background: url("../images/footer/1.jpg") left no-repeat, url("../images/footer/2.jpg") right no-repeat, #FFF;
 }
