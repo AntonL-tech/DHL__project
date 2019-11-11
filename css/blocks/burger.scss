@@ -5,8 +5,10 @@
   border: none;
   cursor: pointer;
   padding: 6px 0;
-  outline: none;
 
+  &:focus {
+    outline: none;
+  }
   @media ($big) {
     display: block;
   }
@@ -38,6 +40,18 @@
     }
     &:after {
       bottom:-8px;
+    }
+  }
+  &--active {
+    .burger__item{
+      transform: rotate(-45deg);
+      &:before{
+        top: 0;
+        transform: rotate(90deg);
+      }
+      &:after {
+        width: 0;
+      }
     }
   }
 }
