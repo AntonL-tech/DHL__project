@@ -36,14 +36,6 @@ $(function() {
 
     });
 
-    /*Active Nav Link*/
-
-    $("#nav a").on("click", function(event) {
-        $("#nav a").removeClass("nav__link--active");
-        $(this).addClass("nav__link--active");
-    });
-
-
     /*Collapse*/
     $("[data-collapse]").on("click", function (event) {
         event.preventDefault();
@@ -60,8 +52,7 @@ $(function() {
     $("[data-switch]").on("click", function (event) {
         event.preventDefault();
 
-        var $this = $(this),
-            blockId = $this.data("switch");
+        let $this = $(this);
         $("[data-switch]").removeClass("express__title__item--active");
         $this.addClass("express__title__item--active");
 
