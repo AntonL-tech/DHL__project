@@ -2,6 +2,10 @@
 .accordion {
   padding: 2.66rem;
 
+  &--show {
+    display: none;
+  }
+
   .accordion__item {
     margin-bottom: 1.33rem;
 

@@ -819,6 +819,9 @@ h1, h2, h3, h4, h5, h6, ul {
 .accordion {
   padding: 2.66rem;
 }
+.accordion--show {
+  display: none;
+}
 .accordion .accordion__item {
   margin-bottom: 1.33rem;
   /*MODIFICATORS*/

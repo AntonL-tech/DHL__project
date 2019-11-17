@@ -7,6 +7,7 @@ $(function() {
     let introH;
     let menuH;
     let headerH;
+    let showExpress = true;
 
     let scrollPos = $(window).scrollTop();
 
@@ -55,7 +56,25 @@ $(function() {
         let $this = $(this);
         $("[data-switch]").removeClass("express__title__item--active");
         $this.addClass("express__title__item--active");
-
     });
 
+    /*Switch*/
+/*    $('#accordion_1,#accordion_2').onclick(function (event) {
+        console.log(event)
+    })*/
+
+    $('#accordion_1').on("click", function (event) {
+        if(!showExpress){
+            $("#show-express").removeClass("accordion--show");
+            $("#show-logistic").addClass("accordion--show");
+            showExpress = true;
+        }
+    });
+    $('#accordion_2').on("click", function (event) {
+        if(showExpress){
+            $("#show-logistic").removeClass("accordion--show");
+            $("#show-express").addClass("accordion--show");
+            showExpress = false;
+        }
+    })
 });
