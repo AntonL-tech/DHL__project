@@ -1,0 +1,85 @@
+@import "../vars";
+
+.modal-work {
+  display: flex;
+
+  .modal-work__preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+
+    .modal-work__photo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+
+  .modal-work__content {
+    width: 35%;
+    padding-left: 2rem;
+
+
+    .modal-work__header {
+      .modal-work__title {
+        font-size: 2rem;
+        color: $red;
+
+        text-transform: uppercase;
+
+        margin-top: 2rem;
+      }
+      .modal-work__info {
+        font-size: 1.5rem;
+        color: $yellow;
+
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        span {
+          margin: 0 1rem;
+        }
+      }
+    }
+    .modal-work__client {
+      .modal-work__client__title {
+        font-size: 1.3rem;
+        color: $red;
+      }
+      .modal-work__client__agency{
+        font-size: 1rem;
+        color: $yellow;
+
+        margin-bottom: 2rem;
+      }
+    }
+    .modal-work__text {
+      font-size: .8rem;
+      padding-right: 7rem;
+      margin-bottom: 3rem;
+      color: $yellow;
+    }
+
+    .modal-work__footer {
+      display:flex;
+      justify-content:space-between;
+      margin: 0 2rem 2rem 0;
+
+      .modal-work__btn {
+        border: none;
+        background: none;
+
+        text-transform: uppercase;
+        color: $red;
+
+        font-family: inherit;
+        font-size: 1rem;
+        cursor: pointer;
+
+        outline: none;
+      }
+    }
+  }
+}

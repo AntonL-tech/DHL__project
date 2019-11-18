@@ -1,0 +1,56 @@
+@import "../vars";
+
+.modal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  padding: 0 1rem;
+
+  background-color: rgba(black, .8);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .modal__dialog {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+
+    background-color: #535151;
+
+    position: relative;
+
+    &--sm {
+      max-width: 900px;
+    }
+
+    .modal__close {
+      width: 39px;
+      height: 39px;
+
+      padding: 0;
+
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1;
+
+      background: none;
+      border: none;
+
+      cursor: pointer;
+
+      transition: transform .2s linear;
+
+      outline: none;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

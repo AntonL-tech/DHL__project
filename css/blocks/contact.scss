@@ -1,0 +1,87 @@
+@import "../vars";
+
+.contact {
+  display: flex;
+
+  .contact__left {
+    width: 45%;
+    padding: 2rem;
+    .modal__title {
+      font-size: 3rem;
+      color: $yellow;
+
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .modal__subtitle {
+      font-size: 1.2rem;
+      color: $yellow;
+
+      text-transform: uppercase;
+
+      margin-bottom: 2rem;
+    }
+    .contact__info {
+      margin: 0 0 2rem 0;
+      padding: 0;
+      list-style: none;
+      color: $yellow;
+      font-size: 1rem;
+
+      li {
+        margin-bottom: .7rem;
+
+        img {
+          margin-right: .5rem;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    form  {
+
+      .label {
+        display: inline-block;
+        font-size: 1rem;
+        color: $yellow;
+        margin-bottom: 1rem;
+        font-family: inherit;
+      }
+      .input {
+        display: block;
+        width: 100%;
+
+        font-family: inherit;
+
+        padding: 1.4rem 1.8rem;
+        background-color: #535151;
+        border: 2px  solid $yellow;
+        border-radius: 35px;
+        color: $yellow;
+        font-size: 1rem;
+
+        outline: none;
+
+        margin-bottom: 2rem;
+
+        &::placeholder {
+          color: rgba($yellow, .5);
+        }
+        &--area {
+          resize: none;
+        }
+      }
+    }
+    .modal__btn {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+  .contact__right {
+    width: 55%;
+    background: url($DirModal + "2.jpg") center no-repeat;
+    background-size: cover;
+  }
+}

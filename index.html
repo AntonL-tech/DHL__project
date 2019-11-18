@@ -42,7 +42,7 @@
     </symbol>
 </svg>
 
-<body>
+<body> <!--class="no-scroll"-->
 <!--Header-menu-->
 <div class="header-menu" id="header-menu">
     <div class="container">
@@ -487,11 +487,97 @@
 </footer> <!--/.footer-->
 
 <!--Modals-->
-<div class="modal">
+<div class="modal" style="display: none;">
     <div class="modal__dialog">
 
-    </div>
-</div>
+        <button type="button" class="modal__close">
+            <img src="images/modals/modal-close.svg" alt="CLose">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <img class="modal-work__photo" src="images/modals/2.jpg" alt="work-photo">
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">dhl worldwide</h3>
+                    <div class="modal-work__info">category <span>|</span> 2019</div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client__title">Client: </div>
+                    <div class="modal-work__client__agency">Creative Agency</div>
+                </div>
+
+                <div class="modal-work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam cum debitis dignissimos enim ex fugit ipsa iste libero neque,
+                    placeat provident quas rerum tempora voluptatem voluptates! Fuga maxime porro tempore?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo nemo nihil nisi?
+                    Deserunt doloribus eaque eum, eveniet fugit hic impedit inventore ipsum labore modi
+                    optio possimus praesentium quaerat suscipit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam cum debitis dignissimos enim ex fugit ipsa iste libero neque,
+                    placeat provident quas rerum tempora voluptatem voluptates! Fuga maxime porro tempore?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo nemo nihil nisi?
+                    Deserunt doloribus eaque eum, eveniet fugit hic impedit inventore ipsum labore modi
+                    optio possimus praesentium quaerat suscipit.
+
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn modal-work__btn--prev" type="button">&lsaquo; Previous</button>
+                    <button class="modal-work__btn modal-work__btn--next" type="button">Next &rsaquo;</button>
+                </div>
+
+            </div> <!--/.modal-work__content-->
+        </div> <!--/.modal-work-->
+
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" style="display: none;">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close">
+            <img src="images/modals/modal-close.svg" alt="CLose">
+        </button>
+
+
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title">LET'S TALK!</h3>
+                    <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
+
+                    <ul class="contact__info">
+                        <li>
+                            <img src="images/modals/phone.svg" alt="phone">
+                            (200) 100 3000
+                        </li>
+                        <li>
+                            <img src="images/modals/message.svg" alt="mail">
+                            dhl@gmail.com
+                        </li>
+                    </ul>
+
+                    <form action="/" method="post">
+                        <label class="label" for="input-email">Adress e-mail</label>
+                        <input class="input" type="text" placeholder="Adress e-mail" id="input-email">
+                        <label class="label" for="blog">Request</label>
+                        <textarea class="input input--area" name="blog" id="blog" cols="30" rows="5" placeholder="Type your request..."></textarea>
+                    </form>
+
+                    <div class="modal__btn">
+                    <a href="#" class="btns btns--modal">Send</a>
+                    </div>
+
+                </div>
+                <div class="contact__right"></div>
+            </div>
+
+
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
 
 
 

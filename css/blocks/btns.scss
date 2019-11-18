@@ -36,4 +36,13 @@
     border-color: transparent;
     margin-right: 0;
   }
+
+  &--modal {
+    font-size: 1rem;
+    color: $yellow;
+    border-color: $yellow;
+    box-shadow: none;
+    margin-right: 0;
+    border-radius: 30px;
+  }
 }
