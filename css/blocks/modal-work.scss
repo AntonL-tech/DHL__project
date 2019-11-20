@@ -3,18 +3,80 @@
 .modal-work {
   display: flex;
 
+  @media ($big) {
+    display: none;
+  }
+
+
   .modal-work__preview {
     width: 65%;
     position: relative;
     overflow: hidden;
 
-    .modal-work__photo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 1;
+    .slick-slider {
 
-      transform: translate3d(-50%, -50%, 0);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .slick-list {
+        height: 100%;
+
+        .slick-track {
+
+          height: 100%;
+
+          .modal-work__photo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+
+            transform: translate3d(-50%, -50%, 0);
+          }
+        }
+      }
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        position: absolute;
+        bottom: 1.4rem;
+        left: 0;
+
+        li {
+
+          &.slick-active {
+            button {
+              background: $white;
+
+            }
+          }
+
+          button {
+
+            width: 11px;
+            height: 11px;
+
+            padding: 0;
+            border: 1px solid $white;
+            border-radius: 50%;
+            background: transparent;
+
+            font-size: 0;
+            color: transparent;
+            margin: 0 .5rem;
+
+            cursor: pointer;
+            outline: none;
+          }
+        }
+      }
     }
   }
 

@@ -3,19 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>DHL</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <!--Sprite-->
 
@@ -43,7 +35,7 @@
     </symbol>
 </svg>
 
-<body>
+<body> <!--class="no-scroll"-->
 <!--Header-menu-->
 <div class="header-menu" id="header-menu">
     <div class="container">
@@ -54,7 +46,7 @@
                 <div class="header-menu__lang">English</div>
             </div>
             <div class="header-menu__right">
-                <div class="header-menu__cont">
+                <div class="header-menu__cont" data-modal="#modal__contacts">
                     <div class="menu__image">
                         <svg>
                             <use xlink:href="#contact"></use>
@@ -113,12 +105,33 @@
                 <li class="intro__list">24/7 supports</li>
             </ul>
             <div class="intro__btn">
-                <a href="#" class="btns">Learn more</a>
-                <a href="#" class="btns">DHL worldwide</a>
+                <a href="#" class="btns" data-modal="#modal__dhl">Learn more</a>
+                <a href="#" class="btns" data-modal="#modal__dhl">DHL worldwide</a>
             </div>
         </div>
     </div>  <!--/.container-->
 </section> <!--/.intro-->
+
+
+
+<!--us-->
+
+<section class="us">
+    <div class="container">
+        <div class="us__header">
+            <div class="us__title">DHL. LOGISTICS FOR THE CONNECTED AGE.</div>
+            <div class="us__text">When Adrian Dalsey, Larry Hillblom and Robert Lynn founded DHL in 1969,
+                they didn’t know they would revolutionize the world of logistics.
+                Today, DHL is the world’s leading logistics company.
+                Our 380,000 people in over 220 countries and territories work every day to help you cross borders,
+                reach new markets and grow your business. Or simply send a letter to your loved ones.
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
 
 
 
@@ -135,7 +148,7 @@
                     and other customized logistic services – with everything DHL does, we
                     help connect people and improve their lives.</div>
                 <div class="features__btn">
-                    <a href="#" class="btns btns--features">Learn More</a>
+                    <a href="#" class="btns btns--features" data-modal="#modal__dhl">Learn More</a>
                 </div>
             </div>
         </div>
@@ -152,25 +165,25 @@
 
             <div class="client__col">
                 <div class="client__item">
-                    <a href="#"><img class="client__photo" src="../images/client/themeforest-light-background.png" alt="themeforest"></a>
+                    <a href="https://themeforest.net/" target="_blank"><img class="client__photo" src="../images/client/themeforest-light-background.png" alt="themeforest"></a>
                 </div>
             </div>
 
             <div class="client__col">
                 <div class="client__item">
-                    <a href="#"><img class="client__photo" src="../images/client/photodune-light-background.png" alt="themeforest"></a>
+                    <a href="https://photodune.net/" target="_blank"><img class="client__photo" src="../images/client/photodune-light-background.png" alt="themeforest"></a>
                 </div>
             </div>
 
             <div class="client__col">
                 <div class="client__item">
-                    <a href="#"><img class="client__photo" src="../images/client/graphicriver-light-background.png" alt="themeforest"></a>
+                    <a href="https://graphicriver.net/" target="_blank"><img class="client__photo" src="../images/client/graphicriver-light-background.png" alt="themeforest"></a>
                 </div>
             </div>
 
             <div class="client__col">
                 <div class="client__item">
-                    <a href="#"><img class="client__photo" src="../images/client/codecanyon-light-background.png" alt="themeforest"></a>
+                    <a href="https://codecanyon.net/" target="_blank"><img class="client__photo" src="../images/client/codecanyon-light-background.png" alt="themeforest"></a>
                 </div>
             </div>
 
@@ -190,11 +203,11 @@
                 <div class="footer__item">
                     <div class="footer__caption">CONTACT CENTER</div>
                     <div class="footer__text">
-                        <a class="footer__link" href="#">dhl express</a>
-                        <a class="footer__link" href="#">dhl parcell & eccomerce</a>
-                        <a class="footer__link" href="#">dhl global forwardings</a>
-                        <a class="footer__link" href="#">dhl freight</a>
-                        <a class="footer__link" href="#">dhl supply chain</a>
+                        <a class="footer__link" href="#" data-modal="#modal__contacts">dhl express</a>
+                        <a class="footer__link" href="#" data-modal="#modal__contacts">dhl parcell & eccomerce</a>
+                        <a class="footer__link" href="#" data-modal="#modal__contacts">dhl global forwardings</a>
+                        <a class="footer__link" href="#" data-modal="#modal__contacts">dhl freight</a>
+                        <a class="footer__link" href="#" data-modal="#modal__contacts">dhl supply chain</a>
                     </div>
                 </div>
             </div>
@@ -216,11 +229,11 @@
                 <div class="footer__item">
                     <div class="footer__caption">social media</div>
                     <div class="footer__text">
-                        <a class="footer__link footer__link--social" href="#">FACEBOOK</a>
-                        <a class="footer__link footer__link--social" href="#">DRIBBBLE</a>
-                        <a class="footer__link footer__link--social" href="#">BEHANCE</a>
-                        <a class="footer__link footer__link--social" href="#">GMAIL</a>
-                        <a class="footer__link footer__link--social" href="#">TWITTER</a>
+                        <a class="footer__link footer__link--social" href="https://www.facebook.com/" target="_blank">FACEBOOK</a>
+                        <a class="footer__link footer__link--social" href="https://dribbble.com/" target="_blank">DRIBBBLE</a>
+                        <a class="footer__link footer__link--social" href="https://www.behance.net/gallery/57623661/Freebie-Ecommerce-Website-Design-(XD)" target="_blank">BEHANCE</a>
+                        <a class="footer__link footer__link--social" href="http://gmail.com/" target="_blank">GMAIL</a>
+                        <a class="footer__link footer__link--social" href="https://twitter.com/" target="_blank">TWITTER</a>
                     </div>
                 </div>
             </div>
@@ -229,9 +242,111 @@
     </div>
 </footer> <!--/.footer-->
 
+<!--Modals-->
+<div class="modal" id="modal__dhl">
+    <div class="modal__dialog">
+
+        <button type="button" class="modal__close" data-close>
+            <img src="../images/modals/modal-close.svg" alt="CLose">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div id="worksSlider">
+                    <div>
+                        <img class="modal-work__photo" src="../images/modals/3.jpg" alt="work-photo">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="../images/modals/2.jpg" alt="work-photo">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">dhl worldwide</h3>
+                    <div class="modal-work__info">category <span>|</span> 2019</div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client__title">Client: </div>
+                    <div class="modal-work__client__agency">Creative Agency</div>
+                </div>
+
+                <div class="modal-work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam cum debitis dignissimos enim ex fugit ipsa iste libero neque,
+                    placeat provident quas rerum tempora voluptatem voluptates! Fuga maxime porro tempore?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo nemo nihil nisi?
+                    Deserunt doloribus eaque eum, eveniet fugit hic impedit inventore ipsum labore modi
+                    optio possimus praesentium quaerat suscipit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam cum debitis dignissimos enim ex fugit ipsa iste libero neque,
+                    placeat provident quas rerum tempora voluptatem voluptates! Fuga maxime porro tempore?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At explicabo nemo nihil nisi?
+                    Deserunt doloribus eaque eum, eveniet fugit hic impedit inventore ipsum labore modi
+                    optio possimus praesentium quaerat suscipit.
+
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">&lsaquo; Previous</button>
+                    <button class="modal-work__btn modal-work__btn--next slickNext" type="button">Next &rsaquo;</button>
+                </div>
+
+            </div> <!--/.modal-work__content-->
+        </div> <!--/.modal-work-->
+
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal__contacts" >
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button type="button" class="modal__close" data-close>
+            <img src="../images/modals/modal-close.svg" alt="CLose">
+        </button>
+
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title">LET'S TALK!</h3>
+                <div class="modal__subtitle">CALL ME OR SEND ME A REQUEST</div>
+
+                <ul class="contact__info">
+                    <li>
+                        <img src="../images/modals/phone.svg" alt="phone">
+                        (200) 100 3000
+                    </li>
+                    <li>
+                        <img src="../images/modals/message.svg" alt="mail">
+                        dhl@gmail.com
+                    </li>
+                </ul>
+
+                <form action="/" method="post">
+                    <label class="label" for="input-email">Adress e-mail</label>
+                    <input class="input" type="text" placeholder="Adress e-mail" id="input-email">
+                    <label class="label" for="blog">Request</label>
+                    <textarea class="input input--area" name="blog" id="blog" cols="30" rows="5" placeholder="Type your request..."></textarea>
+                </form>
+
+                <div class="modal__btn">
+                    <a href="#" class="btns btns--modal">Send</a>
+                </div>
+
+            </div>
+            <div class="contact__right"></div>
+        </div>
+
+
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
 
 
 <!--JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="../js/app.js"></script>
 
 
