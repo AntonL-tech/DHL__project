@@ -1,0 +1,47 @@
+@import "../vars";
+.scroll__top {
+  height: 50px;
+  width: 50px;
+  border: solid 1px $yellow;
+  border-radius: 50%;
+  background-color: $yellow;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 4px $red;
+  transition: box-shadow .2s linear;
+
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 1000;
+  display: none;
+
+  @media ($sm) {
+    right: 25px;
+  }
+
+
+  &:hover {
+    box-shadow: 0 0 15px $red;
+
+  }
+
+  span {
+    color: transparent;
+
+
+    &:after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-top: solid 2px #FFF;
+      border-right: solid 2px #FFF;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      z-index: 1;
+      transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    }
+  }
+}

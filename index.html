@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DHL</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,6 +36,8 @@
 </svg>
 
 <body>
+
+
 <!--Header-menu-->
 <div class="header-menu" id="header-menu">
     <div class="container">
@@ -59,6 +61,10 @@
 
         </div>
 
+        <div class="scroll__top" id="scroll__top">
+            <span>Scroll</span>
+        </div>
+
     </div>
 </div>
 
@@ -72,23 +78,27 @@
             </div>
 
             <nav class="nav" id="nav">
-                <a href="#" class="nav__link">express</a>
-                <a href="#" class="nav__link">parcel & ecommerce</a>
-                <a href="#" class="nav__link">logistics</a>
-                <a href="#" class="nav__link">mail</a>
-                <a href="#" class="nav__link">press</a>
-                <a href="html/index--about.html" class="nav__link">about</a>
+                <a href="index.html" class="nav__link nav__link--active"  title="express">express</a>
+                <a href="html/index--parcel.html" class="nav__link" title="parcel & ecommerce">parcel & ecommerce</a>
+                <a href="html/index--industry.html" class="nav__link"  title="industry sector">industry sector</a>
+                <a href="html/index--careers.html" class="nav__link"  title="Careers">Careers</a>
+                <a href="html/index--press.html" class="nav__link"  title="press">press</a>
+                <a href="html/index--about.html" class="nav__link"  title="about">about</a>
             </nav>
 
             <button class="burger" type="button" id="navToggle">
                 <span class="burger__item">Menu</span>
             </button>
 
-            <div class="header__search">
-                <svg>
-                    <use xlink:href="#search"></use>
-                </svg>
+            <div class="dhl__search">
+                <input class="dhl__search__text" id="dhl__search__text" type="text" placeholder="Search">
+                <div class="header__search" id="header__search">
+                    <svg>
+                        <use xlink:href="#search"></use>
+                    </svg>
+                </div>
             </div>
+
         </div>
     </div> <!--/.container-->
 </header>
@@ -97,7 +107,7 @@
 <section class="intro" id="intro">
     <div class="container">
         <div class="intro__inner">
-            <h2 class="intro__title">We Deliver <br>With Speed</h2>
+            <h2 class="intro__title">DHL. <br>Express services.</h2>
             <div class="intro__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
             <ul class="intro__menu">
                 <li class="intro__list">amazing</li>
@@ -105,8 +115,8 @@
                 <li class="intro__list">24/7 supports</li>
             </ul>
             <div class="intro__btn">
-                <a href="#" class="btns" data-modal="#modal__dhl">Learn more</a>
-                <a href="#" class="btns" data-modal="#modal__dhl">DHL worldwide</a>
+                <a href="#" class="btns" data-modal="#modal__dhl" title="Learn more">Learn more</a>
+                <a href="#" class="btns" data-modal="#modal__dhl" title="DHL worldwide">DHL worldwide</a>
             </div>
         </div>
     </div>  <!--/.container-->
@@ -125,28 +135,28 @@
         <div class="services__inner">
             <div class="services__col">
                 <div class="services__item">
-                    <a href="#"><img class="services__photo" src="images/services/1.jpg" alt=""></a>
-                    <div class="services__caption"><a href="#">EXPRESS SERVICES</a></div>
+                    <a href="html/index--parcel.html" title="parcel"><img class="services__photo" src="images/services/1.jpg" alt="services" title="parcel"></a>
+                    <div class="services__caption"><a href="html/index--parcel.html">EXPRESS SERVICES</a></div>
                     <div class="services__text">When an unknown printer took a galley of type and scrambled it to make a type specimen.</div>
-                    <a href="#" class="services__link">Read More</a>
+                    <a href="html/index--parcel.html" class="services__link" title="Read More">Read More</a>
                 </div>
             </div>
 
             <div class="services__col">
                 <div class="services__item">
-                    <a href="#"><img class="services__photo" src="images/services/2.jpg" alt=""></a>
-                    <div class="services__caption"><a href="#">PARCEL & ECOMMERCE</a></div>
+                    <a href="html/index--parcel.html"><img class="services__photo" src="images/services/2.jpg" alt=""></a>
+                    <div class="services__caption"><a href="html/index--parcel.html">PARCEL & ECOMMERCE</a></div>
                     <div class="services__text">When an unknown printer took a galley of type and scrambled it to make a type specimen.</div>
-                    <a href="#" class="services__link">Read More</a>
+                    <a href="html/index--parcel.html" class="services__link">Read More</a>
                 </div>
             </div>
 
             <div class="services__col">
                 <div class="services__item">
-                    <a href="#"><img class="services__photo" src="images/services/3.jpg" alt=""></a>
-                    <div class="services__caption"><a href="#">FRIEGHT TRANSPORT</a></div>
+                    <a href="html/index--parcel.html"><img class="services__photo" src="images/services/3.jpg" alt=""></a>
+                    <div class="services__caption"><a href="html/index--parcel.html">FRIEGHT TRANSPORT</a></div>
                     <div class="services__text">When an unknown printer took a galley of type and scrambled it to make a type specimen.</div>
-                    <a href="#" class="services__link">Read More</a>
+                    <a href="html/index--parcel.html" class="services__link">Read More</a>
                 </div>
             </div>
 
@@ -162,7 +172,7 @@
                                 </select>
                             </div>
                             <div class="services__btn">
-                                <a href="#" class="btns">Explore</a>
+                                <a href="html/index--error.html" class="btns">Explore</a>
                             </div>
                         </div>
                     </div>
@@ -179,8 +189,7 @@
 <section class="about">
     <div class="container">
 
-        <div class="about__title">One of the best international service provider</div>
-        <a href="#">
+        <a href="html/index--error.html">
         <div class="about__play">
             <svg>
                 <use xlink:href="#play"></use>
@@ -373,25 +382,53 @@
 </div> <!--/.express-->
 
 <!--Features-->
+<div id="sliderFeatures" class="sliderfeatures">
+    <div class="slickSlider" >
+        <div class="features">
 
-<div class="features">
-    <div class="container">
+            <div class="container">
 
-        <div class="features__inner">
-            <div class="features__title">EXCELLENCE. SIMPLY DELIVERED.</div>
-            <div class="features__content">
-                <div class="features__text">International express deliveries; global freight forwarding by air, sea, road and rail;
-                    warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;
-                    and other customized logistic services – with everything DHL does, we
-                    help connect people and improve their lives.</div>
-                <div class="features__btn">
-                    <a href="#" class="btns btns--features" data-modal="#modal__dhl">Learn More</a>
+                    <div class="features__inner">
+                        <div class="features__title">EXCELLENCE. SIMPLY DELIVERED.</div>
+                        <div class="features__content">
+                            <div class="features__text">International express deliveries; global freight forwarding by air, sea, road and rail;
+                                warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;
+                                and other customized logistic services – with everything DHL does, we
+                                help connect people and improve their lives.</div>
+                            <div class="features__btn">
+                                <a href="#" class="btns btns--features__yellow" data-modal="#modal__dhl">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div> <!--/.container-->
+
+        </div> <!--/.Features-->
+    </div>
+
+    <div class="slickSlider">
+        <div class="features features--slick">
+
+            <div class="container">
+
+                <div class="features__inner">
+                    <div class="features__title">EXCELLENCE. SIMPLY DELIVERED.</div>
+                    <div class="features__content">
+                        <div class="features__text">International express deliveries; global freight forwarding by air, sea, road and rail;
+                            warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;
+                            and other customized logistic services – with everything DHL does, we
+                            help connect people and improve their lives.</div>
+                        <div class="features__btn">
+                            <a href="#" class="btns btns--features__red" data-modal="#modal__dhl">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-    </div> <!--/.container-->
-</div> <!--/.Features-->
+            </div> <!--/.container-->
+
+        </div> <!--/.Features-->
+    </div>
+</div>
 
 <!--Client-->
 
@@ -400,11 +437,13 @@
 
         <div class="client__inner">
 
+
             <div class="client__col">
                 <div class="client__item">
                     <a href="https://themeforest.net/" target="_blank"><img class="client__photo" src="images/client/themeforest-light-background.png" alt="themeforest"></a>
                 </div>
             </div>
+
 
             <div class="client__col">
                 <div class="client__item">
@@ -428,6 +467,54 @@
 
     </div>  <!--/.container-->
 </div> <!--/.client-->
+
+<!--partners-->
+
+<div class="partners">
+    <div class="container">
+        <div class="sl">
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/1.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/2.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/3.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/4.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/5.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/6.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/7.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/8.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/9.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/10.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/11.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/12.svg" alt="cart">
+            </div>
+            <div class="sl__slder">
+                <img class="partners__photo" src="images/partners/13.svg" alt="cart">
+            </div>
+        </div>
+    </div> <!--/.container-->
+</div> <!--/.partners-->
 
 <!--Footer-->
 
@@ -453,11 +540,11 @@
                     <div class="footer__item">
                         <div class="footer__caption">about us</div>
                         <div class="footer__text">
-                            <a class="footer__link" href="#">partnerships</a>
-                            <a class="footer__link" href="#">COMPANY PORTRAIT</a>
-                            <a class="footer__link" href="#">DHL GLOBAL FORWARDING</a>
-                            <a class="footer__link" href="#">GREEN SOLUTIONS</a>
-                            <a class="footer__link" href="#">INNOVATION</a>
+                            <a class="footer__link" href="html/index--about.html">partnerships</a>
+                            <a class="footer__link" href="html/index--about.html">COMPANY PORTRAIT</a>
+                            <a class="footer__link" href="html/index--about.html">DHL GLOBAL FORWARDING</a>
+                            <a class="footer__link" href="html/index--about.html">GREEN SOLUTIONS</a>
+                            <a class="footer__link" href="html/index--about.html">INNOVATION</a>
                         </div>
                     </div>
                 </div>
@@ -583,7 +670,9 @@
 
 <!--JavaScript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="js/app.js"></script>
 
 

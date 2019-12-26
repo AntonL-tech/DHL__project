@@ -1,0 +1,49 @@
+@import "../vars";
+.social {
+  display: flex;
+  justify-content: center;
+
+}
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #c6cacc;
+
+  margin-right: 4px;
+  transition: background-color .1s linear;
+
+}
+
+.social__item:hover {
+  background-color: #c6cacc;
+}
+
+.social__item:hover .social__icon {
+  fill: rgba(232, 69, 69, 0.9);
+}
+
+.social__icon {
+  fill: #c6cacc;
+  display: block;
+  height: 18px;
+  transition: fill .1s linear;
+}
+.social--footer {
+  justify-content: center;
+
+}
+.social__item--footer {
+  background-color: #3a3e64;
+  border: 2px solid #ffffff;
+  justify-content: center;
+
+}
+.social__icon--footer {
+  fill: #ffffff;
+}

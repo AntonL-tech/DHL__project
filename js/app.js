@@ -122,7 +122,9 @@ $(function() {
         event.stopPropagation();
     });
 
-    /*Slider https://kenwheeler.github.io/slick/*/
+});
+
+$(document).ready(function(){
 
     $('#worksSlider').slick({
         infinite: true,
@@ -143,4 +145,55 @@ $(function() {
         $('#worksSlider').slick("slickNext");
     });
 
+    /*Features Slider*/
+    let slider = $('#clientSlider');
+
+    slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false
+    });
+
+    $(window).on('scroll',function(){
+        var scr = $(this).scrollTop();
+        var search = $('#dhl__search__text');
+        if(scr > 300){
+            $('#scroll__top').fadeIn();
+        }
+        else{
+            $('#scroll__top').fadeOut();
+        }
+
+        $('#car__search').css('backgroundPositionY', -scr/2)
+         })
+
+        $('#scroll__top').click(function(){
+            $('body, html').animate({
+                scrollTop: 0
+            }, 1000)
+        })
+
+        $('#sliderFeatures').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: true,
+        });
+
+    $('#header__search').on('click', function (event) {
+            $('#dhl__search__text').slideToggle();
+    });
+
+
+    $('.sl').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        autoplay: true
+    });
 });
+

@@ -6,6 +6,10 @@
   .contact__left {
     width: 45%;
     padding: 2rem;
+
+    @media ($sm) {
+      width: 100%;
+    }
     .modal__title {
       font-size: 3rem;
       color: $yellow;
@@ -83,5 +87,9 @@
     width: 55%;
     background: url($DirModal + "2.jpg") center no-repeat;
     background-size: cover;
+
+    @media ($sm) {
+      display: none;
+    }
   }
 }

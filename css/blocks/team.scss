@@ -1,0 +1,73 @@
+@import "../vars";
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem -1rem;
+
+  @media ($sm) {
+    margin: 5rem 0 0 0;
+
+  }
+
+  .team__col {
+    width: 25%;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+
+    @media ($big) {
+      width: 50%;
+
+    }
+
+    @media ($sm) {
+      width: 100%;
+
+    }
+
+    .team__item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      max-width: 270px;
+      overflow: hidden;
+
+      .team_photo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        margin-bottom: 2rem;
+      }
+      .team__name {
+        color: $black;
+        font-size: 1.5rem;
+
+        margin-bottom: .8rem;
+      }
+      .team__subtitle {
+        color: $red;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        margin-bottom: 1rem;
+      }
+      .team__text {
+        color: $gray;
+        font-size: .9rem;
+        line-height: 1.5;
+
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

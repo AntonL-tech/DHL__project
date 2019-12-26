@@ -1,44 +1,50 @@
 @import "../vars";
-.features {
-  width: 100%;
-  height: auto;
+  .features {
+    width: 100%;
 
-  padding: 6rem 0 6.66rem 0;
+    padding: 6rem 0 6.66rem 0;
 
-  background-color: $red;
+    background-color: $red;
 
-  @media ($big) {
-    padding: 4rem 0 4.66rem 0;
-  }
+    &--slick {
 
-  .features__inner {
-
-    .features__title {
-      font-size: 2rem;
-      color: $white;
-
-      margin-bottom: 1.8rem;
+      background-color: $yellow;
 
     }
-    .features__content {
-      display: flex;
-      justify-content: space-between;
-      
-      @media ($big) {
-        display: block;
-      }
 
-      .features__text {
-        font-size: 1.03rem;
+    @media ($big) {
+      padding: 4rem 0 4.66rem 0;
+    }
+
+    .features__inner {
+
+      .features__title {
+        font-size: 2rem;
         color: $white;
 
-        width: 100%;
-        max-width: 660px;
+        margin-bottom: 1.8rem;
+
+      }
+
+      .features__content {
+        display: flex;
+        justify-content: space-between;
 
         @media ($big) {
-          margin-bottom: 2rem;
+          display: block;
+        }
+
+        .features__text {
+          font-size: 1.03rem;
+          color: $white;
+
+          width: 100%;
+          max-width: 660px;
+
+          @media ($big) {
+            margin-bottom: 2rem;
+          }
         }
       }
     }
   }
-}

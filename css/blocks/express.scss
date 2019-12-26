@@ -8,6 +8,10 @@
     padding: 0 0 6.66rem;
   }
 
+  @media ($sm) {
+    padding: 0 0 3rem;
+  }
+
 
   .express__inner {
     display: flex;

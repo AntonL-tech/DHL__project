@@ -1,0 +1,160 @@
+@import "../vars";
+
+.careers {
+  padding: 6rem 0;
+
+  @media ($sm) {
+    padding: 4rem 0;
+  }
+
+  .careers__search {
+    background:url($DirCar + "car2.jpg") center no-repeat;
+    background-attachment: fixed;
+    -webkit-box-shadow: inset 0px 0px 39px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 39px -13px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 39px -13px rgba(0,0,0,0.75);
+    padding: 6rem 0 10rem 0;
+
+    margin-bottom: 5rem;
+
+    .careers__btn {
+      margin-top: 6rem;
+      text-align: center;
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+
+  .careers__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0 -1rem;
+
+    .careers__col {
+
+      width: 33.333%;
+      padding: 0 1rem;
+
+      margin-bottom: 2rem;
+
+      @media ($giant) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+      }
+      @media ($med) {
+
+      }
+      @media ($sm) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .careers__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        max-width: 370px;
+
+        margin-bottom: 2rem;
+
+        overflow: hidden;
+
+        box-shadow: 0 0 4px rgba(43, 42, 44, 0.25);
+
+        transition: box-shadow .2s linear;
+
+        &:hover {
+          box-shadow: 0 0 25px rgba(43, 42, 44, 0.25);
+
+        }
+        .careers__photo {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          max-height: 300px;
+          cursor: pointer;
+        }
+        .careers__content {
+          padding: 1rem;
+
+          height: 250px;
+          overflow: hidden;
+
+          .careers__title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+
+
+            a {
+              text-decoration: none;
+              color: $red;
+
+              position: relative;
+              transition: text-decoration .2s linear;
+
+
+              &:after {
+                content: "";
+                width: 13px;
+                height: 13px;
+                border-top: solid 2px $red;
+                border-right: solid 2px $red;
+                position: absolute;
+                top: 50%;
+                right: -.9rem;
+                z-index: 1;
+                transform: translateY(-50%) rotate(45deg);
+
+                @media ($sm) {
+                  display: none;
+                }
+              }
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          .careers__text {
+            font-size: .99rem;
+          }
+        }
+      }
+    }
+  }
+  .work__dhl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .work__title {
+      font-size: 3.2rem;
+      color: $black;
+      font-weight: 700;
+
+      margin-bottom: 2rem;
+
+      @media ($sm) {
+        font-size: 1rem;
+      }
+    }
+    .work__video {
+      iframe  {
+
+        @media ($sm) {
+          width: 300px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}

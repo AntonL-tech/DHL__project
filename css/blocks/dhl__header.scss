@@ -1,0 +1,69 @@
+@import "../vars";
+
+.dhl__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 2rem;
+
+  .dhl__title {
+    font-size: 4.33rem;
+    font-weight: 700;
+    color: $red;
+    line-height: 1;
+
+    margin-bottom: 2rem;
+
+    &--car {
+      font-size: 2.5rem;
+      color: $white;
+    }
+
+    @media ($sm) {
+      font-size: 2.5rem;      }
+  }
+
+  .dhl__text {
+    font-size: 1.33rem;
+    color: $gray;
+    max-width: 1000px;
+
+    & a {
+      color: $red;
+      text-decoration: none;
+
+      transition: tex-decoration .2s linear, color .2s linear;
+      position: relative;
+
+      &:after {
+          content: "";
+          width: 13px;
+          height: 13px;
+          border-top: solid 2px $red;
+          border-right: solid 2px $red;
+          position: absolute;
+          top: 50%;
+          right: -.9rem;
+          z-index: 1;
+          transform: translateY(-50%) rotate(45deg);
+          transition: color .2s linear;
+      }
+
+      &:hover  {
+        text-decoration: underline;
+        color: rgba($red, .7);
+      }
+    }
+
+    &--car {
+      color: $white;
+      font-size: 1rem;
+
+    }
+    @media ($sm) {
+      font-size: .8rem;
+    }
+  }
+}
